@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Documentación Técnica | ShalomIndustrial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Encabezado Profesional -->
+    <header class="site-header" id="site-header">
+        <div class="wrap nav-container">
+            <a href="index.html#inicio" class="logo" aria-label="Shalom Industrial - Inicio">
+                <img src="logo.png" alt="Shalom Industrial" class="logo-img">
+            </a>
+
+            <!-- Botón Móvil -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="primary-nav">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Menú de Navegación -->
+            <nav class="nav-menu" id="primary-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#productos" class="nav-link">Productos</a></li>
+                    <li><a href="index.html#exportacion" class="nav-link">Exportación</a></li>
+                    <li>
+                        <a href="documentacion.html" class="nav-link nav-link-highlight active">
+                            <span>Documentación</span>
+                            <span class="nav-badge">Portal</span>
+                        </a>
+                    </li>
+                    <li class="nav-cta-item">
+                        <a href="index.html#contacto" class="btn btn-main btn-nav">Cotizar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="docs-page">
+        <div class="wrap">
+            
+            <!-- Tarjeta Principal de Redirección -->
+            <div class="redirect-hero-card">
+                <div class="redirect-status">
+                    <span class="pulse-dot"></span>
+                    <span>Redirección asistida al Portal de Documentación</span>
+                </div>
+
+                <h1>Centro de Documentación Técnica</h1>
+                <p class="lead">
+                    Estás siendo transferido al repositorio oficial de ShalomIndustrial donde podrás consultar y descargar fichas técnicas, hojas de seguridad (SDS), certificados de exportación y guías de aplicación.
+                </p>
+
+                <p class="redirect-countdown-text">
+                    Redirigiendo automáticamente en <strong id="redirect-countdown">5</strong> segundos...
+                </p>
+
+                <div class="redirect-progress-wrapper" aria-hidden="true">
+                    <div class="redirect-progress-bar" id="redirect-progress"></div>
+                </div>
+
+                <div class="redirect-actions">
+                    <!-- Configura aquí la URL de destino deseada en el atributo href -->
+                    <a id="redirect-btn" href="https://docs.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-main">
+                        Ir a la documentación ahora →
+                    </a>
+                    <button type="button" id="cancel-redirect-btn" class="btn btn-ghost" style="color: var(--text); border-color: var(--line);">
+                        Pausar redirección
+                    </button>
+                    <a href="index.html" class="btn btn-ghost" style="color: var(--text); border-color: var(--line);">
+                        ← Volver a Inicio
+                    </a>
+                </div>
+
+                <div class="redirect-info-note">
+                    <span>Enlace configurado:</span>
+                    <code id="destination-url-text">https://docs.google.com</code>
+                    <span style="font-size: 0.8rem; color: var(--muted); margin-left: 6px;">(Puedes cambiar esta URL en el atributo <code>href</code> de <code>#redirect-btn</code>)</span>
+                </div>
+            </div>
+
+            <!-- Catálogo de Recursos Disponibles -->
+            <div>
+                <span class="eyebrow">Recursos disponibles</span>
+                <h2 class="docs-section-title">Archivos técnicos del repositorio</h2>
+                <p class="lead">Documentos que encontrarás disponibles en el portal de documentación de ShalomIndustrial:</p>
+
+                <div class="docs-grid">
+                    <div class="doc-item-card">
+                        <span class="doc-badge">Ficha Técnica</span>
+                        <h3>Cera para Limón Persa</h3>
+                        <p>Especificaciones fisicoquímicas, porcentaje de sólidos, tiempo de secado y tasa de brillo para cítricos verdes.</p>
+                        <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer" class="doc-link">Ver especificación →</a>
+                    </div>
+
+                    <div class="doc-item-card">
+                        <span class="doc-badge">Ficha Técnica</span>
+                        <h3>Cera para Naranja Valencia</h3>
+                        <p>Formulación con emulsión protectora para control de transpiración y conservación prolongada en cámara de frío.</p>
+                        <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer" class="doc-link">Ver especificación →</a>
+                    </div>
+
+                    <div class="doc-item-card">
+                        <span class="doc-badge">Ficha Técnica</span>
+                        <h3>Cera para Piña MD2</h3>
+                        <p>Recubrimiento especial para preservar la turgencia y brillo de la cáscara durante el traslado marítimo.</p>
+                        <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer" class="doc-link">Ver especificación →</a>
+                    </div>
+
+                    <div class="doc-item-card">
+                        <span class="doc-badge">Inocuidad / FDA</span>
+                        <h3>Certificados de Exportación</h3>
+                        <p>Dictámenes de grado alimenticio, registro ante autoridades sanitarias y compatibilidad para mercados internacionales.</p>
+                        <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer" class="doc-link">Consultar certificados →</a>
+                    </div>
+
+                    <div class="doc-item-card">
+                        <span class="doc-badge">Seguridad (SDS)</span>
+                        <h3>Hojas de Seguridad GHS</h3>
+                        <p>Hojas de datos de seguridad de materiales (MSDS/FDS) con directrices de manejo, almacenaje y primeros auxilios.</p>
+                        <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer" class="doc-link">Descargar SDS →</a>
+                    </div>
+
+                    <div class="doc-item-card">
+                        <span class="doc-badge">Manual Operativo</span>
+                        <h3>Guía de Dosificación y Aplicación</h3>
+                        <p>Manual técnico para calibración de boquillas de aspersión, rodillos aplicadores y túneles de secado en empacadora.</p>
+                        <a href="https://docs.google.com" target="_blank" rel="noopener noreferrer" class="doc-link">Leer guía técnica →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="wrap">
+            <span>© ShalomIndustrial. Todos los derechos reservados.</span>
+            <span>Documentación Técnica y Fichas de Exportación</span>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/522299783526?text=Hola%2C%20me%20comunico%20desde%20la%20secci%C3%B3n%20de%20documentaci%C3%B3n%20de%20ShalomIndustrial.%20Me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp al 229 978 3526">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.188 1.564 5.946l-1.637 5.982 6.161-1.616c1.703.93 3.652 1.467 5.728 1.467 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
